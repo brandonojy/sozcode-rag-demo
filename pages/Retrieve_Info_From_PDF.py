@@ -1,9 +1,9 @@
-api_key = st.secrets["api_key"]
 
 import streamlit as st
 from streamlit import session_state as ss
 from openai import OpenAI
 import time
+api_key = st.secrets["api_key"]
 
 client = OpenAI(api_key=api_key)
 st.header('Retrieval of info from PDF files', divider='blue')
